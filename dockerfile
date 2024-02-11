@@ -11,7 +11,6 @@ WORKDIR /app
 
 RUN pip3 install -r requirements.txt
 
-RUN pip3 uninstall -y tensorflow
 RUN pip3 install -U tensorflow
 
 # Copy your model file
