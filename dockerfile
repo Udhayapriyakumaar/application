@@ -9,10 +9,8 @@ ADD . /app
 
 WORKDIR /app
 
-# Install Python dependencies
 RUN pip3 install -r requirements.txt
 
-# Install AVX2 and FMA-enabled TensorFlow
 RUN pip3 uninstall -y tensorflow
 RUN pip3 install -U tensorflow
 
